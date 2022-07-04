@@ -22,7 +22,6 @@ export const school = {
   },
 
   get aGradeStudents() {
-    let i = 0;
     return Object.values(this.students)
       .filter((item) => item.averageGrade <= 100 && item.averageGrade >= 90)
       .map((item) => item.name)
@@ -30,7 +29,6 @@ export const school = {
   },
 
   get bGradeStudents() {
-    let i = 0;
     return Object.values(this.students)
       .filter((item) => item.averageGrade <= 89 && item.averageGrade >= 75)
       .map((item) => item.name)
@@ -38,7 +36,6 @@ export const school = {
   },
 
   get cGradeStudents() {
-    let i = 0;
     return Object.values(this.students)
       .filter((item) => item.averageGrade <= 75 && item.averageGrade >= 60)
       .map((item) => item.name)
@@ -46,7 +43,6 @@ export const school = {
   },
 
   get dGradeStudents() {
-    let i = 0;
     return Object.values(this.students)
       .filter((item) => item.averageGrade <= 59 && item.averageGrade >= 0)
       .map((item) => item.name)
